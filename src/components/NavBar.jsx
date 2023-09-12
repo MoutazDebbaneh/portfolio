@@ -75,7 +75,7 @@ export default function NavBar() {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => {}}>
+            <button className="vvd">
               <span>Let's Connect</span>
             </button>
           </span>
