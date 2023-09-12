@@ -53,9 +53,7 @@ export default function Projects() {
             <div className="projects-grid">
               <Row>
                 {projects.map((project, index) => (
-                  <>
-                    <ProjectCard key={index} {...project} />
-                  </>
+                  <ProjectCard key={index} {...project} />
                 ))}
               </Row>
             </div>
@@ -64,8 +62,8 @@ export default function Projects() {
       </Container>
       <img
         src={colorSharp2}
-        className="background-img-right"
-        alt="background-img-right"
+        className="background-image-right"
+        alt="background-image-right"
       />
     </section>
   );
