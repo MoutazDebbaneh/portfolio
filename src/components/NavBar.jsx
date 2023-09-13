@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon1 from "../assets/img/icons8-linkedin.svg";
+import navIcon2 from "../assets/img/icons8-telegram.svg";
+import navIcon3 from "../assets/img/icons8-github.svg";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -29,7 +29,7 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+        <Navbar.Brand href="#home">Moutaz Debbaneh</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -65,19 +65,21 @@ export default function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://linkedin.com/in/moutaz-debbaneh">
+                <img src={navIcon1} alt="LinkedIn" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://github.com/MoutazDebbaneh">
+                <img src={navIcon3} alt="Github" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+              <a href="https://t.me/Moutaz_Debbaneh">
+                <img src={navIcon2} alt="Telegram" />
               </a>
             </div>
-            <button className="vvd">
-              <span>Let's Connect</span>
-            </button>
+            <a href="#contact" className="d-inline-block">
+              <button className="vvd">
+                <span>Let's Connect</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

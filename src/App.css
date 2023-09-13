@@ -25,8 +25,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -57,7 +56,7 @@ ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -75,7 +74,7 @@ button {
 }
 
 button:hover {
-  border: none !important;
+  border: none;
 }
 
 input:focus,
@@ -101,6 +100,20 @@ p.danger {
 
 #root {
   width: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
 }
 
 /************ Navbar Styling ************/
@@ -146,6 +159,7 @@ span.navbar-text {
 .social-icon {
   display: inline-block;
   margin-left: 14px;
+  margin-right: 18px;
 }
 
 .social-icon a {
@@ -177,7 +191,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 55%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -193,7 +207,6 @@ span.navbar-text {
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
@@ -289,21 +302,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -365,7 +363,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills ************/
 
 .skills {
-  padding: 0 0 50px 0;
+  padding: 150px 0 150px 0;
   position: relative;
 }
 
@@ -497,7 +495,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 60px 0 60px 0;
+  padding: 100px 0 90px 0;
 }
 
 .contact img {
@@ -584,4 +582,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form .status {
   font-size: 16px;
   font-weight: 600;
+}
+
+/************ Footer ************/
+
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url("./assets/img/footer-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  width: 26%;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }

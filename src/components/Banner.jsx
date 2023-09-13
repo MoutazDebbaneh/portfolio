@@ -54,18 +54,21 @@ export default function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {"Hi I'm Moutaz Debbaneh, a "}
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a
-              est impedit illo odio.
+              I'm a Software and Artificial Intelligence Engineer based in Syria
+              with a lifelong passion for coding. I'm dedicated to
+              problem-solving, crafting innovative solutions, and writing clean
+              code. Feel free to contact me below!
             </p>
-            <button onClick={() => {}}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button>
+            <a href="#contact" className="d-inline-block">
+              <button>
+                Let's Connect <ArrowRightCircle size={25} />
+              </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Image" />
