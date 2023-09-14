@@ -26,7 +26,7 @@ export default function Skills() {
   };
 
   return (
-    <section className="skills" id="skills">
+    <section className="skills section" id="skills">
       <Container>
         <Row>
           <Col>

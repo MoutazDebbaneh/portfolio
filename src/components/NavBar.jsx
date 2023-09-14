@@ -22,6 +22,24 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(".section");
+      let currentActiveSection = null;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          currentActiveSection = section.id;
+        }
+      });
+
+      if (currentActiveSection) setActiveLink(currentActiveSection);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleUpdateActiveLink = (value) => {
     setActiveLink(value);
   };

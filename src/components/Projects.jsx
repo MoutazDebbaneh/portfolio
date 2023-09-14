@@ -59,7 +59,7 @@ export default function Projects() {
   }, [data]);
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects section" id="projects">
       <Container>
         {data.gallery && (
           <div className="proj-modal">
