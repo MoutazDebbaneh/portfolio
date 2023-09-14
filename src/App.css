@@ -409,6 +409,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 
+.skill-slider .item h5 {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .skill-slider .item svg {
   width: 60%;
   margin: 0 auto 15px auto;
@@ -550,7 +556,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-modal img {
   max-width: 80%;
-  max-height: 80%;
+  max-height: 100vh;
 }
 
 .proj-modal-x {

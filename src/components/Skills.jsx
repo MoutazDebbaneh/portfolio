@@ -1,13 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../assets/devicon.min.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export default function Skills() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
     },

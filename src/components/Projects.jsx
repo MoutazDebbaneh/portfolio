@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Carousel, Col, Container, Row } from "react-bootstrap";
 import {
   XCircle,
   ArrowLeftCircleFill,
@@ -18,7 +18,7 @@ export default function Projects() {
     let links = {};
     if (project.github) links.github = project.github;
     if (project.colab) links.colab = project.colab;
-    setData({ gallery, index: 0, links });
+    setData({ gallery, links });
     document.body.classList.toggle("hide-scroll");
   };
 
@@ -27,24 +27,10 @@ export default function Projects() {
     document.body.classList.toggle("hide-scroll");
   };
 
-  const swipeImage = (delta) => {
-    let newIndex = data.index + delta;
-    const length = data.gallery.length;
-    if (newIndex == length) newIndex = 0;
-    if (newIndex == -1) newIndex = length - 1;
-    setData({ ...data, index: newIndex });
-  };
-
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (data.gallery) {
-        if (e.keyCode === 37) {
-          // Handle left arrow key press
-          swipeImage(-1);
-        } else if (e.keyCode === 39) {
-          // Handle right arrow key press
-          swipeImage(1);
-        } else if (e.keyCode === 27) {
+        if (e.keyCode === 27) {
           // Handle Escape key press
           handleProjectClose();
         }
@@ -52,11 +38,16 @@ export default function Projects() {
     };
 
     document.addEventListener("keydown", handleKeyDown);
-
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [data]);
+
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
 
   return (
     <section className="projects section" id="projects">
@@ -64,19 +55,30 @@ export default function Projects() {
         {data.gallery && (
           <div className="proj-modal">
             <XCircle className="proj-modal-x" onClick={handleProjectClose} />
-            <ArrowLeftCircleFill
-              className="mx-2 modal-nav"
-              onClick={() => swipeImage(-1)}
-            />
-            <img
-              src={data.gallery[data.index]}
-              alt="Project Image"
-              className="img-fluid w-auto"
-            />
-            <ArrowRightCircleFill
-              className="mx-2 modal-nav"
-              onClick={() => swipeImage(1)}
-            />
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              variant="dark"
+              slide={false}
+              fade
+              touch
+              keyboard
+              prevIcon={<ArrowLeftCircleFill className="modal-nav" />}
+              nextIcon={<ArrowRightCircleFill className="modal-nav" />}
+            >
+              {data.gallery.map((projImg, i) => (
+                <Carousel.Item key={i} className="mx-auto">
+                  <div className="d-flex align-items-center justify-content-center carousel-item-container object-fit-cover">
+                    <img
+                      src={projImg}
+                      alt="Project Image"
+                      className="img-fluid mx-auto"
+                    />
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+
             {data.links && data.links.github && (
               <a href={data.links.github} target="_blank">
                 <button className="proj-github rounded">
