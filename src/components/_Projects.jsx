@@ -63,7 +63,7 @@ export default [
     The app also allows scheduling public transportation rides, enabling users to know exactly when and where they should wait for the bus.`,
     imgUrl: proj2Img6,
     gallery: [proj2Img1, proj2Img2, proj2Img3, proj2Img4, proj2Img5, proj2Img6],
-    tag: "Flutter | Node.js | JWT | MongoDB",
+    tag: "Flutter | Node.js | Express.js | JWT | MongoDB",
     github:
       "https://github.com/MoutazDebbaneh/Vehicle-Tracking-System--Frontend",
   },
