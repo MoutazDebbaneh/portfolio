@@ -43,7 +43,7 @@ export default function Skills() {
                 className="skill-slider w-100"
                 infinite
                 autoPlay
-                autoPlaySpeed="2000"
+                autoPlaySpeed="5000"
               >
                 <div className="item" id="c">
                   <svg viewBox="0 0 128 128">
