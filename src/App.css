@@ -415,6 +415,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   user-select: none;
 }
 
+@media screen and (max-width: 480px) {
+  .skill-slider .item h5 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
 .skill-slider .item svg {
   width: 60%;
   margin: 0 auto 15px auto;
