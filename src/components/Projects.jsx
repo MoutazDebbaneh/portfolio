@@ -72,6 +72,7 @@ export default function Projects() {
                       src={projImg}
                       alt="Project Image"
                       className="img-fluid mx-auto"
+                      loading="lazy"
                     />
                   </div>
                 </Carousel.Item>
