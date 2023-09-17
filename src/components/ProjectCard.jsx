@@ -25,7 +25,7 @@ export default function ProjectCard({
           })
         }
       >
-        <img src={imgUrl} alt={`Project ${title}`} />
+        <img src={imgUrl} alt={`${title}`} loading="lazy" />
         <span className="badge img-tag bg-dark">{tag}</span>
         <div className="proj-txtx">
           <h4>{title}</h4>

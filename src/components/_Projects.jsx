@@ -1,50 +1,50 @@
-import proj1Img1 from "../assets/img/projects/P1-1.png";
-import proj1Img2 from "../assets/img/projects/P1-2.png";
-import proj1Img3 from "../assets/img/projects/P1-3.png";
-import proj1Img4 from "../assets/img/projects/P1-4.png";
-import proj1Img5 from "../assets/img/projects/P1-5.png";
-import proj1Img6 from "../assets/img/projects/P1-6.png";
+import proj1Img1 from "../assets/img/projects/P1-1.webp";
+import proj1Img2 from "../assets/img/projects/P1-2.webp";
+import proj1Img3 from "../assets/img/projects/P1-3.webp";
+import proj1Img4 from "../assets/img/projects/P1-4.webp";
+import proj1Img5 from "../assets/img/projects/P1-5.webp";
+import proj1Img6 from "../assets/img/projects/P1-6.webp";
 
-import proj2Img1 from "../assets/img/projects/P2-1.jpg";
-import proj2Img2 from "../assets/img/projects/P2-2.jpg";
-import proj2Img3 from "../assets/img/projects/P2-3.jpg";
-import proj2Img4 from "../assets/img/projects/P2-4.jpg";
-import proj2Img5 from "../assets/img/projects/P2-5.jpg";
-import proj2Img6 from "../assets/img/projects/P2-6.jpg";
+import proj2Img1 from "../assets/img/projects/P2-1.webp";
+import proj2Img2 from "../assets/img/projects/P2-2.webp";
+import proj2Img3 from "../assets/img/projects/P2-3.webp";
+import proj2Img4 from "../assets/img/projects/P2-4.webp";
+import proj2Img5 from "../assets/img/projects/P2-5.webp";
+import proj2Img6 from "../assets/img/projects/P2-6.webp";
 
-import proj3Img1 from "../assets/img/projects/P3-1.png";
-import proj3Img2 from "../assets/img/projects/P3-2.png";
-import proj3Img3 from "../assets/img/projects/P3-3.png";
-import proj3Img4 from "../assets/img/projects/P3-4.png";
-import proj3Img5 from "../assets/img/projects/P3-5.png";
-import proj3Img6 from "../assets/img/projects/P3-6.png";
+import proj3Img1 from "../assets/img/projects/P3-1.webp";
+import proj3Img2 from "../assets/img/projects/P3-2.webp";
+import proj3Img3 from "../assets/img/projects/P3-3.webp";
+import proj3Img4 from "../assets/img/projects/P3-4.webp";
+import proj3Img5 from "../assets/img/projects/P3-5.webp";
+import proj3Img6 from "../assets/img/projects/P3-6.webp";
 
-import proj4Img1 from "../assets/img/projects/P4-1.png";
-import proj4Img2 from "../assets/img/projects/P4-2.png";
-import proj4Img3 from "../assets/img/projects/P4-3.png";
-import proj4Img4 from "../assets/img/projects/P4-4.png";
-import proj4Img5 from "../assets/img/projects/P4-5.png";
+import proj4Img1 from "../assets/img/projects/P4-1.webp";
+import proj4Img2 from "../assets/img/projects/P4-2.webp";
+import proj4Img3 from "../assets/img/projects/P4-3.webp";
+import proj4Img4 from "../assets/img/projects/P4-4.webp";
+import proj4Img5 from "../assets/img/projects/P4-5.webp";
 
-import proj5Img1 from "../assets/img/projects/P5-1.png";
-import proj5Img2 from "../assets/img/projects/P5-2.png";
+import proj5Img1 from "../assets/img/projects/P5-1.webp";
+import proj5Img2 from "../assets/img/projects/P5-2.webp";
 
-import proj6Img1 from "../assets/img/projects/P6-1.png";
-import proj6Img2 from "../assets/img/projects/P6-2.png";
-import proj6Img3 from "../assets/img/projects/P6-3.jpg";
+import proj6Img1 from "../assets/img/projects/P6-1.webp";
+import proj6Img2 from "../assets/img/projects/P6-2.webp";
+import proj6Img3 from "../assets/img/projects/P6-3.webp";
 
-import proj7Img1 from "../assets/img/projects/P7-1.png";
-import proj7Img2 from "../assets/img/projects/P7-2.png";
-import proj7Img3 from "../assets/img/projects/P7-3.png";
-import proj7Img4 from "../assets/img/projects/P7-4.png";
-import proj7Img5 from "../assets/img/projects/P7-5.png";
-import proj7Img6 from "../assets/img/projects/P7-6.png";
-import proj7Img7 from "../assets/img/projects/P7-7.png";
+import proj7Img1 from "../assets/img/projects/P7-1.webp";
+import proj7Img2 from "../assets/img/projects/P7-2.webp";
+import proj7Img3 from "../assets/img/projects/P7-3.webp";
+import proj7Img4 from "../assets/img/projects/P7-4.webp";
+import proj7Img5 from "../assets/img/projects/P7-5.webp";
+import proj7Img6 from "../assets/img/projects/P7-6.webp";
+import proj7Img7 from "../assets/img/projects/P7-7.webp";
 
-import proj8Img1 from "../assets/img/projects/P8-1.png";
-import proj8Img2 from "../assets/img/projects/P8-2.png";
+import proj8Img1 from "../assets/img/projects/P8-1.webp";
+import proj8Img2 from "../assets/img/projects/P8-2.webp";
 
-import proj9Img1 from "../assets/img/projects/P9-1.png";
-import proj9Img2 from "../assets/img/projects/P9-2.png";
+import proj9Img1 from "../assets/img/projects/P9-1.webp";
+import proj9Img2 from "../assets/img/projects/P9-2.webp";
 
 export default [
   {

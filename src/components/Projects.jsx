@@ -7,7 +7,6 @@ import {
 } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import projects from "./_Projects";
 
 export default function Projects() {
@@ -141,11 +140,6 @@ export default function Projects() {
           </Col>
         </Row>
       </Container>
-      <img
-        src={colorSharp2}
-        className="background-image-right"
-        alt="background-image-right"
-      />
     </section>
   );
 }
