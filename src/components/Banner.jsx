@@ -60,7 +60,8 @@ export default function Banner() {
             </h1>
             <p>
               I'm a Software and Artificial Intelligence Engineer based in Syria
-              with a lifelong passion for coding. I'm dedicated to
+              with a lifelong passion for coding. I currently work as a
+              Full-stack Developer at L-One Systems. I'm dedicated to
               problem-solving, crafting innovative solutions, and writing clean
               code. Feel free to contact me below!
             </p>
